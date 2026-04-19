@@ -1,21 +1,27 @@
 // @kabuswe/graph-contracts
 // Barrel export — all contracts live here
-// Implement each contract file per PRD.md before exporting
 
-// TODO: migrate from graph-ux-research
-// export * from './ux-research';
+// Shared primitives used across all graphs
+export * from "./primitives.js";
 
-// TODO: implement per PRD
-// export * from './intent-classifier';
-// export * from './rag-retriever';
-// export * from './doc-ingestion';
-// export * from './doc-processor';
-// export * from './page-scanner';
-// export * from './web-researcher';
-// export * from './email-processor';
-// export * from './journal-enricher';
-// export * from './daily-briefing';
-// export * from './monitor-alert';
-// export * from './connector-orchestrator';
-// export * from './agent-builder';
-// export * from './supervisor';
+// Tier 1 — Intelligence & Research Primitives
+export * from "./ux-research.js";
+export * from "./intent-classifier.js";
+export * from "./rag-retriever.js";
+export * from "./doc-ingestion.js";
+export * from "./web-researcher.js";
+
+// Tier 2 — Processing & Transformation
+export * from "./doc-processor.js";
+export * from "./page-scanner.js";
+export * from "./email-processor.js";
+export * from "./journal-enricher.js";
+
+// Tier 3 — Agent Workflows
+export * from "./connector-orchestrator.js";
+export * from "./daily-briefing.js";
+export * from "./monitor-alert.js";
+export * from "./agent-builder.js";
+
+// Tier 4 — Supervisor & Orchestration
+export * from "./supervisor.js";
